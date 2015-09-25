@@ -5,10 +5,11 @@ class PagesController < ApplicationController
   end
 
   def stringify
-    if params[:form].blank?
+    #@s = Stringify.new params[:name], params[:adjective]
+    if params[:name].blank? and params[:adjective].blank?
       @text = "You are nothing!"
     else
-      @text = params[:name] + "is so" + params[:adjective]
+      @text = params[:name] + " is so " + params[:adjective]
       #@text = "hi"
     end
   end

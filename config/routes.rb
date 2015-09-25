@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   #root 'controller#stringify'
   root 'pages#home'
   post 'stringify', to: 'pages#stringify'
+  put 'stringify', to: 'pages#person'
   put 'age', to: 'pages#person'
 
   # Example of regular route:
