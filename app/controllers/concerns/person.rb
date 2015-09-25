@@ -2,6 +2,7 @@ class Person
 	def initialize(name, age)
 		@name = name 
 		@age = age
+		@nickname = name[0,4]
 	end 
 	def introduce
 		@name + " " + @age
@@ -10,6 +11,6 @@ class Person
 		2015 - @age.to_i
 	end 
 	def nickname 
-		@name + "'s nickname"
+		@nickname + "'s nickname"
 	end
 end
